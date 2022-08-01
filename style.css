@@ -1,0 +1,94 @@
+.calc {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.calc-title-one {
+    color: green;
+    width: 300px;
+}
+.calc-title-one span {
+    color: red;
+}
+.sistems-wrapper-total {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.inputs-items-sistem {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.inputs-item-title {
+    font-size: 20px;
+}
+.input-radio {
+    margin: 10px 0;
+}
+.input-area > input {
+    padding: 10px 20px;
+    background-color: rgb(79, 186, 122);
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+input::placeholder {
+    color: aliceblue;
+    font-size: 15px;
+}
+.input-radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.sistems-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.total-span {
+    color: red;
+    font-size: 20px;
+}
+#btn-calck {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.error {
+    opacity: 0;
+}
+.show-event {
+    color: red;
+    opacity: 1;
+}
+.sel {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    color: red;
+}
+.sel option {
+    padding: 20px;
+    color: green;
+}
+option {
+    padding: 10px;
+}
+
+@media (max-width: 650px) {
+    .sistems-wrapper-total {
+        padding: 20px;
+        justify-content: center;
+    }
+}

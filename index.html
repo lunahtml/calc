@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="calc">
+
+
+        <h2 style="color: rgb(13, 101, 142); text-align: center;">Рассчитайте цену проектирования систем пожарной
+            сигнализации</h2>
+        <h3 class="error">Одно или несколько полей не заполнено или некорректно заполнено</h3>
+
+        <div class="sistems-wrapper-total">
+
+            <div class="sistems-wrapper-left">
+
+                <h2 class="calc-title-one">Выберите системы, по кoторым желаете заказать проект <span>*</span></h2>
+
+
+                <div class="inputs-items-sistem">
+
+                    <div class="inputs-item">
+                        <h3 class="inputs-item-title">AУПТ</h3>
+                        <input class="check" type="checkbox" value="44" name="" id="aupt">
+                    </div>
+
+                    <div class="inputs-item">
+                        <h3 class="inputs-item-title">АПС</h3>
+                        <input class="check" type="checkbox" value="40" name="" id="aups">
+                    </div>
+
+                    <div class="inputs-item">
+                        <h3 class="inputs-item-title">ВПВ</h3>
+                        <input class="check" type="checkbox" value="56" name="" id="vpv">
+                    </div>
+
+                    <div class="inputs-item">
+                        <h3 class="inputs-item-title">ДУ</h3>
+                        <input class="check" type="checkbox" value="70" name="" id="du">
+                    </div>
+
+                    <div class="inputs-item">
+                        <h3 class="inputs-item-title">СОУЭ</h3>
+                        <input class="check" type="checkbox" value="11" name="" id="soue">
+                    </div>
+
+                    <div class="inputs-item">
+                        <h3 class="inputs-item-title">СКУД</h3>
+                        <input class="check" type="checkbox" value="52" name="" id="skud">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="sistems-wrapper-right">
+
+                <div class="input-area">
+                    <h2 class="calc-title-one">Введите площадь вашего помещения <span>*</span></h2>
+
+                    <input class="area" type="number" id="area" placeholder="площадь" required>
+                </div>
+
+
+                <div class="input-radio-wrapper">
+
+                    <div class="input-radio">
+                        <h2 class="calc-title-one">Выберите тип здания</h2>
+                    </div>
+
+                    <div class="input-radio">
+                        <input class="radio" name="type" type="radio" value="1" id="commerce" checked>
+                        <label class="inputs-item-title" for="commerce">ТЦ или БЦ</label>
+                    </div>
+
+                    <div class="input-radio">
+                        <input class="radio" name="type" type="radio" value="1.2" id="zavod">
+                        <label class="inputs-item-title" for="zavod">Производственное</label>
+                    </div>
+
+                    <div class="input-radio">
+                        <input class="radio" name="type" type="radio" value="1.1" id="admin">
+                        <label class="inputs-item-title" for="admin">Административное</label>
+                    </div>
+
+                </div>
+
+                <h2 class="calc-title-one ">Выберите скорость выполнения</h2>
+
+                <select name="choose" id="select" class="sel">
+                    <option value="1" selected>выберите временной период</option>
+                    <option value="1.5">нужно срочно</option>
+                    <option value="1.2">могу подождать месяц</option>
+                    <option value="1">более месяца</option>
+                </select>
+
+                <button id="btn-calck">Рассчитать</button>
+                <span class="total-span">Итого: <span class="total-ch">0</span></span>
+
+            </div>
+
+        </div>
+
+        <p style="color: rgb(13, 101, 142);"> Обратите внимание! Если ваш проект подразумевает нестандартные решения,
+            стоимость
+            может корректироваться. Расчет не является офертой или коммерческим предложением и служит для
+            ознакомительных целей.</p>
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
